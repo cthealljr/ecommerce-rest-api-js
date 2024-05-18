@@ -14,8 +14,14 @@
 
 import express from 'express'
 
-const PORT = process.env.PORT
+import { connect, end as dbEnd } from './db/index.js'
+import { config } from './config.js'
+
+const PORT = config.PORT
 const app = express()
+
+// Create database handle
+connect(config.DB)
 
 // eslint-disable-next-line no-unused-vars
 app.get('/', (req, res, next) => {
@@ -33,6 +39,8 @@ const handleShutdown = (sig) => {
   server.close(() => {
     console.log('Closed remaining connections.')
     // Additional cleanup goes here (e.g. close Database connections, etc.).
+    dbEnd()
+    console.log('Closed open database connections.')
     process.exitCode = 0
   })
 }

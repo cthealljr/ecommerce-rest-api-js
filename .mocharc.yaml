@@ -1,0 +1,10 @@
+# Mocha Configuration
+
+# Disable Mocha diff (Node's assert module includes diff's)
+# Re-enable this if a different assertion library is used which
+# does not produce its own diff's.
+diff: false
+
+# BDD is default, but setting it explicitly.
+ui: bdd
+
