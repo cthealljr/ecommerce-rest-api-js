@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "./node_modules/.bin/dotenvx run -- mocha **/tests/*_test.js",
+    "test": "standard && ./node_modules/.bin/dotenvx run -- mocha **/tests/*_test.js",
     "start": "./node_modules/.bin/dotenvx run -- nodemon index.js"
   },
   "author": "Charles Theall Jr",
@@ -21,11 +21,10 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "eslint": "^9.3.0",
     "globals": "^15.2.0",
     "mocha": "^10.4.0",
     "nodemon": "^3.1.0",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "standard": "^17.1.0"
   }
 }

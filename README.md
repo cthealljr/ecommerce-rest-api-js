@@ -20,6 +20,10 @@ Currently the application only contains a single route for `/` stating that the 
 
 No testing yet.
 
+## Code Style
+
+JavaScript code in this project follows the [JavaScript Standard Style](https://standardjs.com/).
+
 ## License
 
 Unless otherwise stated, files in this project are licensed under the Apache License Version 2.0.
