@@ -18,7 +18,13 @@ Currently the application only contains a single route for `/` stating that the 
 
 ## Testing
 
-No testing yet.
+To run unit tests use `npm run test`.
+
+To run integration tests use `npm run test-integration`.
+
+## Code Style
+
+JavaScript code in this project follows the [JavaScript Standard Style](https://standardjs.com/).
 
 ## License
 
