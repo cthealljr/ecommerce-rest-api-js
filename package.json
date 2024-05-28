@@ -8,7 +8,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "standard && dotenvx run -- mocha **/tests/*_test.js",
+    "test": "standard && dotenvx run -- mocha 'test/unit/**/*.test.js'",
+    "test-integration": "standard && dotenvx run -- mocha 'test/integration/**/*.test.js'",
     "start": "dotenvx run -- nodemon index.js"
   },
   "author": "Charles Theall Jr",
