@@ -8,8 +8,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "standard && ./node_modules/.bin/dotenvx run -- mocha **/tests/*_test.js",
-    "start": "./node_modules/.bin/dotenvx run -- nodemon index.js"
+    "test": "standard && dotenvx run -- mocha **/tests/*_test.js",
+    "start": "dotenvx run -- nodemon index.js"
   },
   "author": "Charles Theall Jr",
   "license": "Apache-2.0",
